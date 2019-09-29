@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { Button } from 'antd'
+import './App.css'
 
-function App() {
+function App () {
+  const marginLeft = { marginLeft: '20px', marginTop: '20px' }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <Button style={ marginLeft } type={'primary'}>按 钮</Button>
+        <Button style={ marginLeft } type={'danger'}>按 钮</Button>
+        <Button style={ marginLeft }>按 钮</Button>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
